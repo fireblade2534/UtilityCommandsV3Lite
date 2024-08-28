@@ -29,12 +29,6 @@ ServerConfig={
 	MessageHistoryLength=200,
 	ItemsPerRequest=8,
 	AdminPermLevel=PermMod,
-	TPSBelow=40,
-	TPSBelowTime=25,
-	TPSDiffrence=18,
-	TPSScanTime=9,
-	TPSMaxStrikes=6,
-	MaxPartsCount=60,
 
 	ServerDataName="ServerA",
 	ServerData={
