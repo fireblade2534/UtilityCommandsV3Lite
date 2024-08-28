@@ -16,6 +16,9 @@ Utility Commands is a set of stormworks addons that adds usefull commands to the
 + Auto auth
 + Heal system
 
+## Commands
+Use ?help in game to get a list of commands
+
 ## Install
 1. Download repo
 2. Unzip the repo and move the files into %appdata%\Stormworks\data\missions\UtilityCommandsV3Lite
