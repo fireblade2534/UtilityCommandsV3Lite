@@ -3280,7 +3280,6 @@ CommandDirectory={
 	{CommandFreeze,{"freeze"},"(Player ID)","Freezes a player. Doing it on a player that's frozen will unfreeze them.",PermMod,false,false,false},
 	{CommandListVehicles,{"list_vehicles","lv","vl"},"[Detailed]", "Lists out all player spawned vehicles.",PermMod,false,true,false},
 	{CommandVehicleData,{"vehicledata","vehicle_data","vd"},"(Vehicle ID)","Shows the vehicle data for the specified vehicle.",PermMod,false,false,false},
-	{CommandWarn,{"warn"},"(Player ID) (Reason)","Warns a player for a specified reason and despawns all of their vehicles.",PermMod,false,true,false},
 	{CommandListStaff,{"staff","view_staff"},"","Shows a list of online staff.",PermAuth,false,true,false},
 	{CommandHistory,{"history"}, "(Player ID)","Shows a players warn/ban history.",PermMod,false,true,false},
 	{CommandMessage,{"msg","send","message","dm","whisper","tell"}, "(Player ID) (Message)","With a player id it will message the player with that id. (Admins can see private messages)",PermAuth,true,false,true},
