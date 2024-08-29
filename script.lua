@@ -991,6 +991,11 @@ function onTick()
 						end
 					end
 				end
+				if Ticks % 300 == 0 then
+					for _,Y in pairs(FilteredServerPlayers()) do
+						UpdatePlayerPermissions(Y.id)
+					end
+				end
 				if Ticks % 30 == 0 then
 					local ServerConfigData=GetServerConfigData()
 					HeartBeatSend()
@@ -1126,6 +1131,7 @@ function onGroupLoad(GroupID)
 				--Announce("Test",VehicleData["name"])
 			end
 		end
+		GetVehicleWithMostVoxels(GroupID)
 		AnnounceAbovePerms("[Vehicle Loaded]", PlayerName .. "'s vehicle named " .. g_savedata["Vehicles"][GroupID]["Name"] .. " and with ID " .. GroupID .. " has fully loaded",PermMod,OwnerID)
 		if g_savedata["Vehicles"][GroupID]["MainBody"] ~= -1 then
 			for _,X in pairs(FilteredServerPlayers()) do
@@ -1147,7 +1153,7 @@ function onGroupSpawn(GroupID, PeerID, X, Y, Z, Cost)
 		AnnounceAbovePerms("[Vehicle Spawned]", Name .. " has spawned vehicle with ID " .. GroupID,PermMod,PeerID)
 		SendHttp({"TypeVehicleSpawn",GroupID,PeerID,Name,PlayerSteamID,g_savedata["Vehicles"][GroupID]["Name"]})
 
-
+		
 		if GetSetting("EnforceVehicleLimit") == true then
 			CheckVehicleLimits(PeerID)
 		end
