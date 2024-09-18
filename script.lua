@@ -2398,7 +2398,7 @@ function CommandFollow(FullMessage, PeerID, Admin, Auth, Command, One, Two, Thre
 
 end
 
-function matrix.getMatrixRotation(RoationMatrix) --returns radians for the functions: M.rotation X and Y and Z (credit to woe and quale)
+function matrix.getMatrixRotation(RoationMatrix)
 	
     local z = -math.atan(RoationMatrix[5],RoationMatrix[1])
     --rot_M = M.multiply(rot_M, M.rotationY(-z))
