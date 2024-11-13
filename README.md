@@ -27,7 +27,3 @@ Use ?help in game to get a list of commands
 5. Enable UtilityCommandsV3Lite
 6. Create the world
 
-## Steam workshop
-I will upload this to the steam workshop after a bit more testing.
-
-
